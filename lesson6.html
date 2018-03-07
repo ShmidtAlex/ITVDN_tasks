@@ -8,9 +8,9 @@
 	<script type="text/javascript" src="js/main.js"></script>
 	<title>Document</title>
 </head>
-<body>
+<body id="main">
 	<div class="container">
-		<h1>This is lesson 6. EventListeners.</h1>
+		<h1>This is lesson 6-7. EventListeners.</h1>
 	</div>
 	<div class="lessons">
 		<div class="lessonEx" id="eventsOrder">
@@ -29,21 +29,88 @@
 			</form>
 		</div>
 		<div id="stopPropagation"class="lessonEx">
-			<h2>stopPropagation example</h2>
+			<h2>preventDefault example</h2>
+			<div id="guardFromUnwantedInput" class="verifyingForm" >
+				<div class="conditions">Please, enter only "0" or "1"</div>
+				<input class="veriField" type="text" value="">
+				<input class="veriField" type="text" value="">
+				<input class="veriField" type="text" value="">
+				<input class="veriField" type="text" value="">
+				<input class="veriField" type="text" value="">
+				<input class="veriField" type="text" value="">
+				<input class="veriField" type="text" value="">
+				<input class="veriField" type="text" value="">
+				<input class="veriField" type="text" value="">
+				<input class="veriField" type="text" value="">
+			</div>
 		</div>
-		<div id="riddle" class="lessonEx">
+		<div class="lessonEx">
+			<h2>Target example</h2>
+			<div id="wrapper">
+				<p class="justp"></p>
+				<p class="justp"></p>
+				<p class="justp"></p>
+				<p class="justp"></p>
+				<p class="justp"></p>
+				<p class="justp"></p>
+				<p class="justp"></p>
+				<p class="justp"></p>
+				<p class="justp"></p>
+				<p class="justp"></p>
+				<p class="justp"></p>
+				<p class="justp"></p>
+				<p class="justp"></p>
+				<p class="justp"></p>
+				<p class="justp"></p>
+				<div id="otherDiv">
+					<p class="justp"></p>
+					<p class="justp"></p>
+					<p class="justp"></p>
+					<p class="justp"></p>
+					<p class="justp"></p>
+				</div>
+			</div>
 			
 		</div>
 	</div>
 	<div class="lessons">
-		<div class="lessonEx" id="authorisation">
+		<div class="lessonEx eventProp">
+			<h2>Event Properties</h2>
+			<p class="evPropDesc" id="descriptionEvProp"></p>
+			<input type="button" name="button1" value="get Properties" id="button1">
+		</div>
+		<div class="lessonEx eventProp">
+			<h2>Event properties for mouse</h2>
+			<p class="evPropDesc"  id="descriptionMouseEvProp"></p>
 			
 		</div>
-		<div class="lessonEx" id="replaceDiv">
-			
+		<div class="lessonEx mouseOnOver">
+			<h2>Mouse on /over example</h2>
+			<p id="square" class="squares"></p>
 		</div>
-		<div class="lessonEx" id="movingTextDiv">
-			
+		<div class="lessonEx mouseEvents">
+			<h2>mousedown / mousemove / mouseup example</h2>
+			<div class="wrap">
+				<p id="one" ></p>
+				<p id="two" ></p>
+				<p id="three" ></p>
+			</div>
+		</div>
+	</div>
+	<div class="lessons">
+		<div class="lessonEx keyboardEvents">
+			<h2>mousedown / mousemove / mouseup example</h2>
+			<div class="wrap">
+				<p>Please, press any key on your keyboard. Notise, what is result of pressing alt/shift/ctrl.</p>
+				<p id="output" ></p>
+			</div>
+		</div>
+		<div class="lessonEx keyboardEvents">
+			<h2>info from keyboard events</h2>
+			<div class="wrap">
+				<p>Please, press any key on your keyboard. Notise, what is result of pressing alt/shift/ctrl.</p>
+				<p id="output2" ></p>
+			</div>
 		</div>
 	</div>
 </body>
