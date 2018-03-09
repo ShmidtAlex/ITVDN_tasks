@@ -14,6 +14,9 @@ window.onload = function(){
 	function getSelAll(selector){
 		return document.querySelectorAll(selector);
 	}
+	function getTags(selector){
+		return document.getElementsByTagName(selector);
+	}
 	/*classwork 1*/
 	var elem1 = getId('first');
 	var elem2 = getId('second');
@@ -152,7 +155,7 @@ var element = getId("nameInput");
 
 	/*Keyboard events*/
 	var field = getId('main');
-	console.log(field);
+	//console.log(field);
 	function print(message){
 		var output = getId('output');
 		output.innerHTML += message + "<br/>";
@@ -186,18 +189,105 @@ var element = getId("nameInput");
 	}
 	function pushForInfo(e){
 		clear();
-		if(e.keyCode >= 112 && e.keyCode<=123){
-			console.log(e.charCode);
-			e.preventDefault();
-		}
+		// if(e.keyCode >= 112 && e.keyCode<=123 || e.keyCode == 9){
+		// 	console.log(e.charCode);
+		// 	e.preventDefault();
+		// }
 		//console.log(e.charCode);
 		printInfo('alt = ' + e.altKey);
 		printInfo('ctrl = ' + e.ctrlKey);
 		printInfo('shift = ' + e.shiftKey);
-		printInfo('charCode = ' + e.charCode);// code of symbol
+		//two same ways
+		printInfo('element.key = ' + e.key);// code of symbol 
+		printInfo('charCode = ' + String.fromCharCode(e.charCode)+ " " +typeof e.charCode); //note: charCode is deprecated https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key
 		printInfo('keyCode = ' + e.keyCode);
-		
 	}
 	anotherField.addEventListener('keydown', pushForInfo);
-	anotherField.addEventListener('keypress', pushForInfo);
+	anotherField.addEventListener('keypress', pushForInfo); //only needs for e.charCode
+
+	/*Input filter example*/
+	
+	var inputs = getTags("input");
+	//check all inputs for type="text" and dataset properties
+	for (var i = 0; i < inputs.length; i++){
+		var e = inputs[i];
+		if(e.type != "text") continue; // miss elements if they are not text input area
+		if(e.dataset.charsAllowed == undefined) continue; //miss elements which have no data-chars-allowed attributes
+		//dataset is a property, which allows to invoke data-attribute
+		//to all of the e elements add an eventListener
+		e.addEventListener('keypress', keyFilter, false);
+	}
+	function keyFilter(e){
+		if (e.keyCode == 0 || e.keyCode <32) {
+			//we don't need do anything, if pressed key is enter or smth like this
+			return true;
+		}// otherwise, we find all targets, which have dataset attribute chars-allowed:
+		//it contains allowed symbols
+		var allowedText = e.target.dataset.charsAllowed;
+		//console.log(allowedText);
+		// and the element, which must be shown if there is an error:
+		//it shows the id of error
+		var element = e.target.dataset.messageId;
+		//console.log(element);
+		var symbol = e.key.toLowerCase();
+		//console.log(symbol);
+		//then we check if this symbol is eligible for this field
+		if(allowedText.search(symbol) ==-1){
+			if(element){
+				element = getId(element);
+				element.style.visibility ="visible";
+			}
+			//then we cansel input of the wrong symbol
+			e.preventDefault();
+			//return false;
+		} else {
+			if(element){
+				element = getId(element);
+				element.style.visibility = "hidden";
+			}
+			//return true;
+		} 
+	}
+	/*element dragging example*/
+	var draggingCube = getId('draggingCube');
+	var dragBlock = getId('drag');
+	//var wrapp = getId('wrapper');
+	//hconsole.log(wrapp.offsetLeft);
+	
+	function drag(elementToDrag, event){
+		//mouse coords before start dragging
+		var startX = event.clientX,
+			startY = event.clientY;
+		//elem coords which will be dragged
+		var origX = elementToDrag.offsetLeft,
+			origY = elementToDrag.offsetTop;
+		//difference bentween mouse coords and elem coords:
+		var deltaX = startX - origX,
+			deltaY = startY - origY;
+	
+		//registering of mouseup and mousemove events
+		//here is the reason, why we assign eventListener to document:
+		//it adds control while mouse move too fast, if we'll assign 
+		//this eventListener to elementToDrag, mouse pointer will move
+		//faster then the element itself, so we'll able to loose it sometimes
+		document.addEventListener('mousemove', moveHandler, true);
+		document.addEventListener('mouseup', upHandler, true);
+		//drag the element considering margin from first mouse click
+		function moveHandler(e){
+			elementToDrag.style.left = (e.clientX - deltaX) + "px";
+			elementToDrag.style.top = (e.clientY - deltaY) +"px";
+		}
+		//eventListener unassingned if we up mouse button
+		function upHandler(e){
+			document.removeEventListener("mouseup", upHandler, true);
+			document.removeEventListener("mousemove", moveHandler, true);
+		}
+
+	}
+	draggingCube.addEventListener('mousedown', function (e){
+		drag(this, e);
+	});
 }
+// window.onbeforeunload = function(){
+// 	return "Are you sure, that you want to close the window???";
+// }

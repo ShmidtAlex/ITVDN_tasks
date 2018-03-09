@@ -127,16 +127,55 @@ body{
 			
 		}
 		.wrap{
-
 			#output{
 				overflow: hidden;
 				height: 270px;
 				margin: 20px 10px 10px 18px;
 				border-radius: 5px;
-			}	
-			
+			}
 		}
-		
+		.filterPart{
+			display: block;
+			//border:1px solid lightblue;
+			margin:30px;
+			text-align: center;
+			label{
+				float:left;
+				margin:10px 10px 0 10px;
+				font-weight: 800;
+			}
+			input{
+				float:left;
+				margin:5px 0 0 0; 
+				width:95%;
+
+			}
+			span{
+				float:left;
+				padding: 5px 0 5px 5px;
+				color:red;
+				text-align: center;
+				font-style: italic;
+				font-size: 14px;
+				visibility: hidden;
+			}
+		}
+		.elemDragging{
+			position: relative;
+			#wrapper{
+				position: absolute;
+				top:0;
+				left: 0;
+				.draggingEl{
+					position: absolute;
+					top: 60px;
+					left: 20px;
+					width: 40px;
+					height: 40px;
+					background-color: green;
+				}
+			}
+		}
 	}
 
 }

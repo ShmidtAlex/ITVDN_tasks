@@ -112,6 +112,25 @@
 				<p id="output2" ></p>
 			</div>
 		</div>
+		<div class="lessonEx keyboardEvents">
+			<h2>Input filter</h2>
+			<div class="filterPart">
+				<label for="">Name</label>
+				<input type="text" name="firstName" data-chars-allowed="abcdefghjiklmnopqrstuvwxyz" data-message-id="firstNameError">
+				<span id="firstNameError">(only enlgish characters are allowed)</span>
+			</div>
+			<div class="filterPart">
+				<label for="">Zip code</label>
+				<input type="text" name="zip" data-chars-allowed="1234567890" data-message-id="zipError">
+				<span id="zipError">(only digits are allowed)</span>
+			</div>
+		</div>
+		<div  id="drag" class="lessonEx elemDragging">
+				<h2>Element Dragging</h2>
+				<div id="wrapper">
+					<div id="draggingCube" class="draggingEl"></div>
+				</div>
+			</div>
 	</div>
 </body>
 </html>
