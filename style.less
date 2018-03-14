@@ -1,5 +1,5 @@
 body{
-	background: lightblue;
+	background-color: rgba(176, 65, 109, 0.64);
 	height: 100%;
 	width:100%;
 	.container{
@@ -29,151 +29,80 @@ body{
 				text-align: center;
 			}
 			p{
-				margin: 10px;
-				text-align: center;
+				margin: 10px 20px;
+				//text-align: center;
 			}
-			#first,#third,#second {
-				margin:10px;
-				border: 3px solid darkgray;
-				padding: 40px;
-				background-color: white;
+			textarea {
+				margin:0 27px;
 			}
-			#wrapper {
-				margin-left:20px;
-				p{
-					width:60px;
-					height:60px;
-					background: green;
-					float:left;
-					margin:5px;
-				}
+			#saveButton{
+				margin:0 27px;
+				width:81%;
 			}
-		}
-		#preventDefault{
-			#nameInput {
-				margin:20px 10px;
+			.coloredTextBut {
+				margin:5px 0px 0 6px;
+				border-radius: 5px;
+				width:30%;
+				outline: none;
+				border: 1px solid black;
 			}
-		}
-		.verifyingForm{
-			margin:10px;
-			background:lightblue;
-			padding:10px 0 10px 0;
-			border:2px solid whitesmoke;
-			.conditions{
-				text-align: center;
-				margin:1% 10%;
-				color:whitesmoke;
-				text-shadow:2px 2px 3px rgba(0, 0, 0, 0.9);
+			#red{
+				.coloredTextBut();
+				background-color: rgba(176, 65, 109, 0.94);
+				
 			}
-			.veriField{
-				margin: 1% 10% 1% 20%;
-				text-align:center;
+			#green{
+				.coloredTextBut();
+				background-color:lightgreen;
+				
 			}
-		}
-		.eventProp{
-			text-align: center;
-			.evPropDesc {
-				height: 60%;
-				width: 85%;
-				border: 1px solid blue;
-				margin:10px 0 0 20px; 
-				text-align: left;
-				padding:10px 0px 0 10px;
+			#blue{
+				.coloredTextBut();
+				background-color: lightblue;
+				
 			}
-			#button1{
-				margin-top:10px;
+			#runningBut{
+				
 			}
-			#descriptionMouseEvProp{
-				font-size: 16px;
-				//height: 70%;
+			.showState{
+				margin:10px 10px 0px 30px;
 			}
-		}
-		.mouseOnOver{
-			.squares {
-				margin: 50px 0 0 80px;
-				width: 150px;
-				height: 150px;
-				background-color: #f0166d;
+			.beautyText{
+				margin:0 5px;
+				border:2px solid darkgray;
 				border-radius: 5px;
 			}
-		}
-		.mouseEvents{
-			.wrap{
-				overflow: hidden;
-				margin: 20px 10px 10px 18px;
+			#changedTextColor p{
+				padding:10px 10px;
+				background-color: whitesmoke;
 				border-radius: 5px;
-				#one{
-					float:left;
-					display: block;
-					background-color: #7f0b47;
-					height: 100px;
-					width:100px;
-				}
-				#two{
-					float:left;
-					display: block;
-					height: 100px;
-					width:100px;
-					background-color: #0b7f5d;
-				}
-				#three{
-					float:left;
-					display: block;
-					height: 100px;
-					width:100px;
-					background-color: #0b3c7f;
-				}
+				
 			}
-			
-		}
-		.wrap{
-			#output{
-				overflow: hidden;
-				height: 270px;
-				margin: 20px 10px 10px 18px;
-				border-radius: 5px;
-			}
-		}
-		.filterPart{
-			display: block;
-			//border:1px solid lightblue;
-			margin:30px;
-			text-align: center;
-			label{
-				float:left;
-				margin:10px 10px 0 10px;
-				font-weight: 800;
-			}
-			input{
-				float:left;
-				margin:5px 0 0 0; 
-				width:95%;
+			#wrap{
+				position: relative;
+				border:1px solid black;
+				height: 85%;
 
+				.runner{
+					.coloredTextBut();
+					position: absolute;
+					top:10px;
+					left:40px;
+					background-color:red;
+					color: whitesmoke;
+					font-weight: 800;
+					width: 130px;
+					height: 30px;
+				}
 			}
-			span{
-				float:left;
-				padding: 5px 0 5px 5px;
-				color:red;
-				text-align: center;
-				font-style: italic;
-				font-size: 14px;
+			#ctrlA{
 				visibility: hidden;
 			}
-		}
-		.elemDragging{
-			position: relative;
-			#wrapper{
-				position: absolute;
-				top:0;
-				left: 0;
-				.draggingEl{
-					position: absolute;
-					top: 60px;
-					left: 20px;
-					width: 40px;
-					height: 40px;
-					background-color: green;
-				}
+			#ctrlS{
+				visibility: hidden;
+			}
+			#ctrlShiftS{
+				visibility: hidden;
 			}
 		}
 	}
