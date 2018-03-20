@@ -26,6 +26,8 @@ body{
 			background: lightgray;
 			h1,h2{
 				//padding-left:15px;
+				margin-top:1%;
+				margin-bottom: 1%;
 				text-align: center;
 			}
 			p{
@@ -34,6 +36,83 @@ body{
 			}
 			textarea {
 				margin:0 27px;
+			}
+			form {
+				display: block;
+				margin: 3%;
+				width: 90%;
+
+				input {
+					margin:1% 7%;
+					width: 90%;
+					color:gray;
+					font-style: italic;
+					text-align: center;
+				}
+				#regBut {
+					width:91%;
+					outline: none;
+					border-radius: 5px;
+					border: 2px solid green;
+					background-color: lightgreen;
+					color:black;
+					font-style: normal;
+				}
+				#regButt:active, #regBut:focus {
+					background-color:darkgray;
+					border: 2px solid black;
+					color:black;
+					font-style: normal;
+				}
+			}
+			.typeFormElem {
+				display: block;
+				margin: 3%;
+				width: 90%;
+				.typeForm {
+					margin:1% 7%;
+					//float:left;
+					width: 90%;
+					background-color: lightblue;
+					outline: none;
+					border:1px solid green;
+					color:green;
+				}
+				#inlineCheck {
+					width:10%;
+					margin: 0 0 0 15%;
+				}
+				span {
+					margin:10%;
+				}
+				.inlineRadio{
+					display: inline-block;
+					margin: 0 0% 0 0%;
+					width:5%;
+				}
+				#resetter {
+					color:red;
+					font-style:normal;
+					border:1px solid rgba(255, 0, 0, 0.3);
+					border-radius: 5px;
+					background-color: darkgray;
+				}
+				.listSelect{
+					.typeForm();
+					heigth:50px;
+				}
+				#submitted {
+					font-style: normal;
+					font-weight: 800;
+					color:darkgreen;
+					border-radius: 5px;
+					border:2px solid darkgreen;
+					background-color: whitesmoke;
+				}
+				
+				.name {
+					margin: 0px 0 0 25px;
+				}
 			}
 		}
 	}

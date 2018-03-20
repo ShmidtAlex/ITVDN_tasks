@@ -14,16 +14,100 @@
 	</div>
 	<div id="fieldAroundBlocks" class="lessons">
 		<div id="lessEx" class="lessonEx" >
-			
+			<h2>Access to form and form elemens</h2>
+			<form name="myForm" action="">
+				<input type="text" value="">
+				<input type="text" name="userSername" value="">
+				<input id="third" type="text" value="">
+				<input id="regBut" type="button" value="Registration">
+			</form>
 		</div>
 		<div class="lessonEx">
-			
+			<h2>Type of inputs</h2>
+			<form action="" class="typeFormElem">
+				<input class="typeForm" type="button" name="stivie" value="button">
+				<input id="inlineCheck" class="typeForm" type="checkbox" name="checkbox1">Check Box 1
+				<input class="typeForm" type="file" value="">
+				<input class="typeForm" type="hidden">
+				<input class="typeForm" type="password">
+				<span>Radio 1</span>
+				<input class="typeForm inlineRadio" type="radio" name="group1" checked="checked">
+				<span>Radio 2</span>
+				<input class="typeForm inlineRadio" type="radio" name="group1" value="off">
+				<input id="resetter" type="reset" name="reset1" value="Reset form">
+				<select name="select1" class="listSelect">
+					<option value="value">text</option>
+					<option value="value">text</option>
+					<option value="value">text</option>
+				</select>
+				<select multiple="multiples" size="3" name="multipleChoise" class="listSelect">
+					<option value="value">text</option>
+					<option value="value">text</option>
+					<option value="value">text</option>
+				</select>
+
+				<input id="submitted" type="submit" name="submit1" value="Submit">
+				<div class="name">single text field</div>
+				<input type="text" name="text1" value="1">
+				<div class="name">Text Area</div>
+				<textarea name="textArea1" id="tA" cols="29" rows="4"></textarea>
+			</form>
 		</div>
 
 		<div class="lessonEx">
-			
+			<h2>Inputs Properties</h2>
+			<form action="" name="form1" class="typeFormElem">
+				<div class="name">First Name</div>
+				<input type="text" name="firstNameEdit">
+				<div class="name">Last Name</div>
+				<input type="text" name="lastNameEdit">
+				<input type="button" value="Get All Elements" id="getAllElem">
+				<div class="name" id="result">see result</div>
+			</form>
 		</div>
 		<div class="lessonEx">
+			<h2>onchange Event (it doesn't work properly)</h2>
+			<form action="" class="typeFormElem" id="thirdSection">
+				<!-- <div class="name">First</div> -->
+				<input type="text" name="first1" value="">
+				<!-- <div class="name">Second</div> -->
+				<input type="text" name="second2" value="">
+				<!-- <div class="name">Third</div> -->
+				<input type="text" name="third3" value="">
+			</form>
+			<p id="output">Results Output</p>
+		</div>
+	</div>
+	<div class="lessons">
+		<div class="lessonEx" >
+			<h2>onfocuse event</h2>
+			<form action="" class="typeFormElem" id="onfocOrBlur">
+				<!-- <div class="name">First</div> -->
+				<input type="text" name="first1" value="">
+				<!-- <div class="name">Second</div> -->
+				<input type="text" name="second2" value="">
+				<!-- <div class="name">Third</div> -->
+				<input type="text" name="third3" value="">
+			</form>
+			<p id="output">Results Output</p>
+		</div>
+		<div class="lessonEx" >
+			<h2>WaterMark</h2>
+			<form action="" id="watermark" class="typeFormElem">
+				<div class="name">Login</div>
+				<input type="text" name="Login" placeholder="Enter your login">
+				<div class="name">Email</div>
+				<input type="text" name="Email" placeholder="Enter your email">
+			</form>
+		</div>
+		<div class="lessonEx">
+			<h2></h2>
+			<form action="" name="form1" class="typeFormElem">
+				
+			</form>
+		</div>
+		<div class="lessonEx">
+			<h2></h2>
 			
 		</div>
 	</div>
