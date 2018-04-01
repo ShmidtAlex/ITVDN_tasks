@@ -25,7 +25,7 @@
 		<div class="lessonEx">
 			<h2>Type of inputs</h2>
 			<form action="" class="typeFormElem">
-				<input class="typeForm" type="button" name="stivie" value="button">
+				<input type="button" class="typeForm" name="stivie" value="button">
 				<input id="inlineCheck" class="typeForm" type="checkbox" name="checkbox1">Check Box 1
 				<input class="typeForm" type="file" value="">
 				<input class="typeForm" type="hidden">
@@ -80,7 +80,7 @@
 	</div>
 	<div class="lessons">
 		<div class="lessonEx" >
-			<h2>onfocuse event</h2>
+			<h2>onfocus event</h2>
 			<form action="" class="typeFormElem" id="onfocOrBlur">
 				<!-- <div class="name">First</div> -->
 				<input type="text" name="first1" value="">
@@ -101,16 +101,70 @@
 			</form>
 		</div>
 		<div class="lessonEx">
-			<h2></h2>
-			<form action="" name="form1" class="typeFormElem">
-				
+			<h2>Validation of form</h2>
+			<form action="" id="validForm" name="form1" class="typeFormElem">
+				<div class="name">Login</div>
+				<input type="text" name="login" value="">
+				<div class="name">Password</div>
+				<input type="password" name="password" value="">
+				<div id="notification" class="name"></div>
+				<input type="submit" value="Send" >
 			</form>
+		</div>
+		<div class="lessonEx">
+			<h2>HTML5 validation</h2>
+			<form id="h5" action="" class="typeFormElem">
+				<div class="name">Login</div>
+				<input type="text" name="login" required="required">
+				<div class="name">Password</div>
+				<input type="password" name="password" required="required">
+				<div class="name">Email</div>
+				<input type="email" name="emailAddress" value="" required="required">
+				<div class="name">Phone number</div>
+				<input id="phonecheck" type="text" pattern="\+\d{1,4}-\d{3}-\d{3}-\d{2}-\d{2}" title="phone format +7(000)000-00-00" name="emailAddress">
+				<input type="submit">
+			</form>
+		</div>
+	</div>
+	<div class="lessons">
+		<div class="lessonEx" >
+			<h2></h2>
+			<form action="#"  id="valFormHomeW" class="typeFormElem">
+				<fieldset id="regForm">
+					<legend  class="name">Registration form</legend>
+					<legend class="name">Enter Your first name</legend>
+					<input id="fName" type="text" placeholder="first name" required="required" value="">
+					<legend class="name">Enter Your second name</legend>
+					<input id="sName" type="text" placeholder="second name" required="required" value="">
+					<legend class="name">Enter your login name</legend>
+					<input id="login" type="text" name="login"  title="you can use @, dots, underscores, letters and digits only" required="required" value="">
+					<legend class="name">Enter password</legend>
+					<input id="pass" type="password" name="password" title="caps letters and digits are required" required="required" value="">
+					<legend class="name">Confirm password</legend>
+					<input id="confPass" type="password" name="confirmPass" title="it has to match with password" required="required" >
+					<legend class="name">Enter email address</legend>
+					<input id="email" name="emailAddress" title="enter email in correct format" required="required" value="">
+					<legend class="name">choose Your sex</legend>
+					<legend class="radiobuttonText">Male</legend>
+					<input id="" class="radiobutton" type="radio" name="sex" value="male" required="required" checked >
+					<legend class="radiobuttonText">Female</legend>
+					<input class="radiobutton" type="radio" name="sex" value="female" required>
+				</fieldset>
+				<input id="submitHomW" type="submit">
+				<div id="failFill"></div>
+			</form>
+		</div>
+		<div class="lessonEx" >
+			<h2></h2>
+			
+		</div>
+		<div class="lessonEx">
+			<h2></h2>
 		</div>
 		<div class="lessonEx">
 			<h2></h2>
 			
 		</div>
 	</div>
-	
 </body>
 </html>
