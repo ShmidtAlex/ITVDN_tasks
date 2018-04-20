@@ -9,6 +9,192 @@
 	<title>order pizza</title>
 </head>
 <body>
-	
+	<div class="formWrap">
+		<h3>Order Pizza</h3>
+		<form action="" id="pizzaOrder">
+			<h4 class="pizzaPrice">Totaly:</h4>
+			<div class="inpBlockWrap4"> 
+				<div id="totalCost"> 0 </div><span class="left">$</span>
+			</div>
+			<div class="inpBlockWrap3">
+				<div class="name">name <span class="redAsterisk">*</span></div>
+				<input type="text" name="name" id="name" required="required" value="">
+				<div id="nameMessage"></div>
+				<div class="name">email<span class="redAsterisk">*</span></div>
+				<input type="email" name="email" id="email" required ="required">
+				<div id="emailMessage"></div>
+				<div class="name">phone<span class="redAsterisk">*</span></div>
+				<input type="phone" name="phone" id="phone" required="required">
+				<div id="phoneMessage"></div>
+				<div class="name">delivery address<span class="redAsterisk">*</span></div>
+				<textarea name="address" type="text" required="requred" cols="19.5" rows="2"></textarea>
+				<div class="name">comments</div>
+				<textarea name="comments"  cols="19.5" rows="5"></textarea>
+				<input type="submit" class="submitButton" value="submit">
+				<div class="astMess">fields marked with an "*" are required</div>
+			</div>
+		</form>
+	</div>
+	<div class="blind"></div>
+	<div class="pizzas">
+		<div class="unit" id="margoUnit">
+			<div class="name">margarita</div>
+			<div class="pic" id="margoPic" ></div>
+			<div class="priceVSsize">
+				<input type="button" id="margaritaSmall" class="sizeButton" value="small">
+				<input type="button" id="margaritaMiddle" class="sizeButton" value="middle">
+				<input type="button" id="margaritaLarge" class="sizeButton" value="large">
+			</div>
+			<div class="counter">
+				<input type="button" class="decrement" id="decrement" value="-">
+				<div class="numberForOrder" id="margoNumb">0</div>
+				<input type="button" class="decrement" id="increment" value="+">
+				<div class="cost" >
+					<div class="unitcost" id="margaritasCost"></div>
+					<div id="currency"></div>
+				</div>
+			</div>
+			<div class="listExtraAdds" id="margoExt">some extras <span class="costOfAdds"></span>
+				<input type="button" class="adds for05cent" name="beef" id="" value="beef">
+				<input type="button" class="adds for05cent" name="bacon" id="" value="bacon">
+				<input type="button" class="adds for04cent" name="mashrums" id="" value="mashrums">
+				<input type="button" class="adds for03cent" name="chicken" id="" value="chicken">
+				<input type="button" class="adds for03cent" name="onion" id="" value="onion">
+				<input type="button" class="adds for03cent" name="oregano" id="" value="oregano">
+				<input type="button" class="adds for03cent" name="olives" id="" value="olives">
+				<input type="button" class="adds for04cent" name="cheese" id="" value="cheese">
+				<input type="button" class="adds for03cent" name="tomato" id="" value="tomato">
+			</div>
+		</div>
+		<div class="unit" id="peperUnit">
+			<div class="name">peperoni</div>
+			<div class="pic" id="peperPic"></div>
+			<div class="priceVSsize">
+				<input type="button" id="peperoniSmall" class="sizeButton" value="small">
+				<input type="button" id="peperoniMiddle" class="sizeButton" value="middle">
+				<input type="button" id="peperoniLarge" class="sizeButton" value="large">
+			</div>
+			<div class="counter">
+				<input type="button" class="decrement" id="decrement" value="-">
+				<div class="numberForOrder" id="peperNumb">0</div>
+				<input type="button" class="decrement" id="increment" value="+">
+				<div class="cost" >
+					<div class="unitcost" id="peperoniCost"></div>
+					<div id="currency"></div>
+				</div>
+			</div>
+			<div class="listExtraAdds"id="peperExt">some extras <span class="costOfAdds"></span>
+				<input type="button" class="adds" id="" name="beef" value="beef">
+				<input type="button" class="adds" id="" name="bacon" value="bacon">
+				<input type="button" class="adds for03cent" name="mashrums" id="" value="mashrums">
+				<input type="button" class="adds for04cent" name="chicken" id="" value="chicken">
+				<input type="button" class="adds for03cent" name="onion" id="" value="onion">
+				<input type="button" class="adds for03cent" name="oregano" id="" value="oregano">
+				<input type="button" class="adds for03cent" name="olives" id="" value="olives">
+				<input type="button" class="adds for04cent" name="cheese" id="" value="cheese">
+				<input type="button" class="adds for03cent" name="tomato" id="" value="tomato">
+			</div>
+		</div>
+		<div class="unit" id="napoliUnit">
+			<div class="name">napoli</div>
+			<div class="pic" id="napoliPic"></div>
+			<div class="priceVSsize">
+				<input type="button" id="napoliSmall" class="sizeButton" value="small">
+				<input type="button" id="napoliMiddle" class="sizeButton" value="middle">
+				<input type="button" id="napoliLarge" class="sizeButton" value="large">
+			</div>
+			<div class="counter">
+				<input type="button" class="decrement" id="decrement" value="-">
+				<div class="numberForOrder" id="napoNumb">0</div>
+				<input type="button" class="decrement" id="increment" value="+">
+				<div class="cost" >
+					<div class="unitcost" id="napoliCost"></div>
+					<div id="currency"></div>
+				</div>
+			</div>
+			<div class="listExtraAdds" id="napoliExt">some extras <span class="costOfAdds"></span>
+				<input type="button" class="adds for05cent" name="beef" id="" value="beef">
+				<input type="button" class="adds for05cent" name="bacon" id="" value="bacon">
+				<input type="button" class="adds for04cent" name="mashrums" id="" value="mashrums">
+				<input type="button" class="adds for03cent" name="chicken" id="" value="chicken">
+				<input type="button" class="adds for03cent" name="onion" id="" value="onion">
+				<input type="button" class="adds for03cent" name="oregano" id="" value="oregano">
+				<input type="button" class="adds for03cent" name="olives" id="" value="olives">
+				<input type="button" class="adds for04cent" name="cheese" id="" value="cheese">
+				<input type="button" class="adds for03cent" name="tomato" id="" value="tomato">
+			</div>
+		</div>
+		<div class="unit" id="season4Unit">
+			<div class="name">four seasons</div>
+			<div class="pic" id="fourSeasonPic"></div>
+			<div class="priceVSsize">
+				<input type="button" id="season4Small" class="sizeButton" value="small">
+				<input type="button" id="season4Middle" class="sizeButton" value="middle">
+				<input type="button" id="season4Large" class="sizeButton" value="large">
+			</div>
+			<div class="counter">
+				<input type="button" class="decrement" id="decrement" value="-">
+				<div class="numberForOrder" id="seas4Numb">0</div>
+				<input type="button" class="decrement" id="increment" value="+">
+				<div class="cost" >
+					<div class="unitcost" id="fourSeasonCost"></div>
+					<div id="currency"></div>
+				</div>
+				
+			</div>
+			<div class="listExtraAdds" id="season4Ext">some extras <span class="costOfAdds"></span>
+				<input type="button" class="adds for05cent" name="beef" id="" value="beef">
+				<input type="button" class="adds for05cent" name="bacon" id="" value="bacon">
+				<input type="button" class="adds for04cent" name="mashrums" id="" value="mashrums">
+				<input type="button" class="adds for03cent" name="chicken" id="" value="chicken">
+				<input type="button" class="adds for03cent" name="onion" id="" value="onion">
+				<input type="button" class="adds for03cent" name="oregano" id="" value="oregano">
+				<input type="button" class="adds for03cent" name="olives" id="" value="olives">
+				<input type="button" class="adds for04cent" name="cheese" id="" value="cheese">
+				<input type="button" class="adds for03cent" name="tomato" id="" value="tomato">
+			</div>
+		</div>
+		<div class="unit" id="calzoneUnit">
+			<div class="name">calzone</div>
+			<div class="pic" id="calzonePic"></div>
+			<div class="priceVSsize">
+				<input type="button" id="calzoneSmall" class="sizeButton" value="small">
+				<input type="button" id="calzoneMiddle" class="sizeButton" value="middle">
+				<input type="button" id="calzoneLarge" class="sizeButton" value="large">
+			</div>
+			<div class="counter">
+				<input type="button" class="decrement" id="decrement" value="-">
+				<div class="numberForOrder" id="calzNumb">0</div>
+				<input type="button" class="decrement" id="increment" value="+">
+				<div class="cost" >
+					<div class="unitcost" id="calzoneCost"> </div>
+					<div id="currency"></div>
+				</div>
+				
+			</div>
+			<div class="listExtraAdds" id="calzoneExt">some extras <span class="costOfAdds"></span>
+				<input type="button" class="adds for05cent" name="beef" id="" value="beef">
+				<input type="button" class="adds for05cent" name="bacon" id="" value="bacon">
+				<input type="button" class="adds for04cent" name="mashrums" id="" value="mashrums">
+				<input type="button" class="adds for03cent" name="chicken" id="" value="chicken">
+				<input type="button" class="adds for03cent" name="onion" id="" value="onion">
+				<input type="button" class="adds for03cent" name="oregano" id="" value="oregano">
+				<input type="button" class="adds for03cent" name="olives" id="" value="olives">
+				<input type="button" class="adds for04cent" name="cheese" id="" value="cheese">
+				<input type="button" class="adds for03cent" name="tomato" id="" value="tomato">
+			</div>
+		</div>
+		<div class="orderDetails" >Order Details (shopping chart details):
+			<ol id="order"></ol>
+			
+		</div>
+	</div>
+
 </body>
 </html>
+<!-- <p class="light" id="firstLineOrder">1</p>
+			<p class="dark">2</p>
+			<p class="light">3</p>
+			<p class="dark">4</p>
+			<p class="light">5</p>
+			<p class="dark"></p> -->
