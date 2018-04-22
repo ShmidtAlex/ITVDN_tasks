@@ -23,28 +23,44 @@ window.onload = function(){
 		{name: 'margarita', size: 'middle', cost: 3.00, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
 		{name: 'margarita', size: 'large', cost: 3.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
 
-		{name: 'margarita', size: 'small', cost: 2.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
-		{name: 'margarita', size: 'middle', cost: 3.00, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
-		{name: 'margarita', size: 'large', cost: 3.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+		{name: 'peperoni', size: 'small', cost: 2.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+		{name: 'peperoni', size: 'middle', cost: 3.00, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+		{name: 'peperoni', size: 'large', cost: 3.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
 
-		{name: 'margarita', size: 'small', cost: 2.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
-		{name: 'margarita', size: 'middle', cost: 3.00, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
-		{name: 'margarita', size: 'large', cost: 3.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+		{name: 'napoli', size: 'small', cost: 2.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+		{name: 'napoli', size: 'middle', cost: 3.00, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+		{name: 'napoli', size: 'large', cost: 3.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
 
-		{name: 'margarita', size: 'small', cost: 2.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
-		{name: 'margarita', size: 'middle', cost: 3.00, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
-		{name: 'margarita', size: 'large', cost: 3.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+		{name: 'season4', size: 'small', cost: 2.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+		{name: 'season4', size: 'middle', cost: 3.00, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+		{name: 'season4', size: 'large', cost: 3.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
 
-		{name: 'margarita', size: 'small', cost: 2.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
-		{name: 'margarita', size: 'middle', cost: 3.00, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
-		{name: 'margarita', size: 'large', cost: 3.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
-
-		{name: 'margarita', size: 'small', cost: 2.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
-		{name: 'margarita', size: 'middle', cost: 3.00, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
-		{name: 'margarita', size: 'large', cost: 3.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+		{name: 'calzone', size: 'small', cost: 2.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+		{name: 'calzone', size: 'middle', cost: 3.00, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+		{name: 'calzone', size: 'large', cost: 3.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+		/*template for creation new untis*/
+		// {name: 'newpizza', size: 'small', cost: 'newcost', availableExtras: ['extra1', 'extra2']},
+		// {name: 'newpizza', size: 'middle', cost:'newcost', availableExtras: ['extra1', 'extra2']},
+		// {name: 'newpizza', size: 'large', cost: 'newcost', availableExtras: ['extra1', 'extra2']},
 
 	]
-	console.log(PIZZAS[0].cost);
+	const EXTRAS = [
+		{name: "Mozzarella", cost: 0.4},
+		{name: "tomatoes", cost: 0.3},
+		{name: "basil", cost: 0.3},
+		{name: "olives", cost: 0.3},
+		{name: "beef", cost: 0.5},
+		{name: "bacon", cost: 0.5},
+		{name: "mashrooms", cost: 0.3},
+		{name: "chicken", cost: 0.4},
+		{name: "onion", cost: 0.3},
+		{name: "oregano", cost: 0.3},
+		{name: "hot red peper", cost: 0.3}
+	]
+	console.log(EXTRAS[0].name);
+	function renderPizza(pizzaData, pizzaNode) {
+
+	}
 	// var pizzaUnit = [
 	// 		size = {small, middle, large},
 	// 		pictures = 
