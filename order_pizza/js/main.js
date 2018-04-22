@@ -18,6 +18,37 @@ window.onload = function(){
 	function getName(selector) {
 		return document.getElementsByName(selector);
 	}
+	const PIZZAS = [
+		{name: 'margarita', size: 'small', cost: 2.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+		{name: 'margarita', size: 'middle', cost: 3.00, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+		{name: 'margarita', size: 'large', cost: 3.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+
+		{name: 'margarita', size: 'small', cost: 2.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+		{name: 'margarita', size: 'middle', cost: 3.00, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+		{name: 'margarita', size: 'large', cost: 3.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+
+		{name: 'margarita', size: 'small', cost: 2.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+		{name: 'margarita', size: 'middle', cost: 3.00, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+		{name: 'margarita', size: 'large', cost: 3.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+
+		{name: 'margarita', size: 'small', cost: 2.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+		{name: 'margarita', size: 'middle', cost: 3.00, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+		{name: 'margarita', size: 'large', cost: 3.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+
+		{name: 'margarita', size: 'small', cost: 2.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+		{name: 'margarita', size: 'middle', cost: 3.00, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+		{name: 'margarita', size: 'large', cost: 3.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+
+		{name: 'margarita', size: 'small', cost: 2.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+		{name: 'margarita', size: 'middle', cost: 3.00, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+		{name: 'margarita', size: 'large', cost: 3.50, availableExtras: ['Mozzarella', 'tomatoes', 'basil', 'olives', 'beef', 'bacon', 'mashrooms', 'chicken', 'onion', 'oregano', 'hot red peper']},
+
+	]
+	console.log(PIZZAS[0].cost);
+	// var pizzaUnit = [
+	// 		size = {small, middle, large},
+	// 		pictures = 
+	// ]
 	var redactButs;
 		extra = getSelAll(".costOfAdds"),
 		priceInitial = getSelAll(".cost"),
